@@ -1,20 +1,23 @@
 {
-  "name": "login",
-  "version": "1.0.0",
-  "main": "login.js",
+  "name": "express-4.x-local-example",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "example",
+    "express",
+    "passport"
+  ],
+  "author": "Liya Babu",
+  "license": "Unlicense",  
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "express-validator": "^6.4.0",
+    "express-session": "^1.16.1",
+    "morgan": "^1.9.1",
     "mysql": "^2.18.1",
-    "passport": "^0.4.1",
+    "passport": "^0.4.0",
     "passport-local": "^1.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "liya",
-  "license": "ISC",
-  "description": ""
+  }
 }

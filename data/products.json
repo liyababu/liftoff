@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Chicken Cutlet",
+    "description": "A starter with potatoes and chicken",
+    "price": 3.00
+  },
+  {
+    "id": 2,
+    "title": "Onion Vada",
+    "description": "A starter made with batter fried Onion,chillies,ginger",
+    "price": 2.50
+  },
+  {
+    "id": 3,
+    "title": "Potato Bonda",
+    "description": "A starter with spiced mashed potatoes",
+    "price": 15
+  },
+  {
+    "id": 4,
+    "title": "Chicken Biriyani",
+    "description": "Main course rice with spices and chicken",
+    "price": 13.50
+  },
+  {
+    "id": 5,
+    "title": "Mixed Fried Rice",
+    "description": "Main course rice with vegetables,chicken,prawns",
+    "price": 13.00
+  }
+
+]

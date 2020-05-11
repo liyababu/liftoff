@@ -1,0 +1,48 @@
+
+	<div class="container">
+		<h3 class="text-center">About Us</h3><br>
+		<p class="text-center">We are here to serve authentic South Indian flavours to our loved ones.Our mission is to make food with love and deliver food to you fresh.We are a set of experienced chefs from house.We are proud housewifes who have eager to be creative and innovative.The cooking profession, while it's a noble craft and a noble calling, 'cause you're doing something useful - you're feeding people, you're nurturing them, you're providing sustenance - it was never pure.</p>
+	  </div><br>
+	  <div class="col-lg-12 col-md-12">
+			<figure>
+			  <img src="/images/about-img2.jpg"  class="rounded mx-auto d-block" alt="img01">
+			</figure>
+	  </div>
+	  <div class="clearfix"></div>
+	</div>
+
+  	 <section class="menu-wthree" id="menu">
+		<div>
+			<img src="/images/menu-img.jpg" class="rounded mx-auto d-block" alt="Menu">
+		  </div>
+  {{# each products }}
+  <div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>{{ this.title }}</h3>
+            <p class="description">{{{this.description}}}</p>
+            <div class="clearfix">
+            <div class="price pull-left"> ${{ this.price }} </div>
+              <a href="/add/{{ this.id }}" class="btn btn-default pull-right" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+  	 </section>
+<section class="contact-wthree" id="contact">
+	<div class="container">
+	  <div class="col-lg-12 col-md-6">
+			<div>
+		<img src="/images/contact-img.jpg" class="rounded mx-auto d-block" alt="Contact"><br>
+	  </div>
+	  <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+	  <p class="w3-text-blue-grey w3-large"><b>Catering Service, 12250 S Monroe st,Kansas city</b></p>
+	  <p>You can also contact us by phone 00553123-2323 or email catering@catering.com.</p>
+	  </div>
+		</div>
+	  <div class="clearfix"></div>
+	</div>
+  </section>

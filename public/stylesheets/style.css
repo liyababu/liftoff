@@ -1,0 +1,68 @@
+
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.hello{
+color:white;
+
+}
+.dropdown-menu .cart {
+  min-width: 250px;
+  padding: 15px 25px 0;
+}
+
+.dropdown-menu .cart .row > div {
+  padding: 0 0 0 0;
+}
+
+.dropdown-menu .cart .totalPrice{
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.cart.page {
+  padding: 25px 0;
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.login-form h1 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+  box-sizing:border-box;
+}
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+  box-sizing:border-box;
+}
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #535b63;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}

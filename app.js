@@ -55,6 +55,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(3000);
+// use port 3000 unless there exists a preconfigured port
+var port = process.env.port || 3000;
+
+app.listen(port);
 
 module.exports = app;

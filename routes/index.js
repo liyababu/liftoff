@@ -117,7 +117,6 @@ router.get('/cart', function(req, res, next) {
   }
   var cart = new Cart(req.session.cart);
   res.render('cart', {
-    // title: 'World Of Flavors',
     products: cart.getItems(),
     totalPrice: cart.totalPrice
   });

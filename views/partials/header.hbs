@@ -1,8 +1,10 @@
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-  <a class="navbar-brand" href="#">World of flavors</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+       <div class="container-fluid">
+     <a class="navbar-brand" href="#">World of flavors</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+     </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
@@ -16,15 +18,15 @@
       </li>
     </ul>
     </div>
-
+            
  {{#if user}}
-<p class="hello">Hello,{{user}}</p>
+<div class="hello">Hello,{{user}}</div>
 	<form method="GET" action="logout" >
 		<button type="submit" class="btn btn-dark">Logout</button>
 	</form>
     <div class="dropdown pull-right">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" style="color:white" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart" aria-hidden="true" style="color:white"></i> Cart
                 {{# if session.cart.totalItems }}
                 <span>({{session.cart.totalItems}})</span>
                 {{/if}}
@@ -34,13 +36,13 @@
                 <div class="cart">
                     {{# each session.cart.items }}
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div>
                             {{ this.item.title }}
                         </div>
-                        <div class="col-xs-4 text-right">
+                        <div >
                             {{ this.quantity }}
                         </div>
-                        <div class="col-xs-4 text-right">
+                        <div >
                             ${{ this.price }}
                         </div>
                     </div>
@@ -48,7 +50,7 @@
                     <div class="row">
                         <div class="text-right">
                             <div class="totalPrice">Total: ${{ session.cart.totalPrice }}</div>
-                            <a href="/cart/" class="btn btn-success">Procceed</a>
+                            <a href="/cart/" class="btn btn-success">Proceed</a>
                         </div>
                     </div>
                 </div>
@@ -61,4 +63,7 @@
 	</form>
 
     {{/if}}
+    
 </nav>
+          
+        

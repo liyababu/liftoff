@@ -30,7 +30,6 @@ connection.connect(function(err) {
 router.get('/', function (req, res, next) {
   res.render('index', 
   { 
-    // title: 'World Of Flavor',
     products: products,
     user: req.session.username
   }
@@ -69,7 +68,6 @@ res.end();
 
 router.post('/login', 
   function(req, res) {
-    console.log("5");
     var username = req.body.username;
     var password = req.body.password;
     if (username && password) {
@@ -97,7 +95,6 @@ router.get('/logout',
     req.session.loggedin = false;
     req.session.username = null;
     req.session.password = null;
-    console.log("logout")
     res.redirect('/');
   });
 
@@ -134,5 +131,10 @@ router.get('/remove/:id', function(req, res, next) {
   req.session.cart = cart;
   res.redirect('/cart');
 });
+
+router.get('/checkout',function(req,res){
+  res.render("checkout")
+})
+
 
 module.exports = router;

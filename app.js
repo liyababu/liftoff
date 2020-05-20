@@ -38,34 +38,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', index);
-var http = require('http');
-app.use( function(req, res, next) {
 
-  if (req.originalUrl && req.originalUrl.split("/").pop() === 'favicon.ico') {
-    return res.sendStatus(204);
-  }
-
-  return next();
-
-});
-/**
- * Get port from environment and store in Express.
- */
-
-var port = (process.env.PORT || '3000');
-app.set('port', port);
-
-/**
- * Create HTTP server.
- */
-
-var server = http.createServer(app);
-
-/**
- * Listen on provided port, on all network interfaces.
- */
-
-server.listen(port);
 
 
 module.exports = app;

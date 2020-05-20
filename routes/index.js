@@ -8,7 +8,7 @@ var Cart = require('../models/cart');
 var products = JSON.parse(fs.readFileSync('./data/products.json', 'utf8')); 
 
 // Create connection to Database
-var connection = mysql.createConnection({
+var connection = mysql.createPool({
 	host     : 'us-cdbr-east-06.cleardb.net',
 	user     : 'b8f2187a505a7d',
 	password : 'c11b1197',

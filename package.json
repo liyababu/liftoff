@@ -1,8 +1,8 @@
 {
-  "name": "nodejs-shopping-cart",
+  "name": "World of flavor",
   "version": "1.0.0",
-  "author": "George Tsopouridis",
-  "email": "gtsopour@gmail.com",
+  "author": "Liya Babu",
+  "email": "liya.babu1@gmail.com",
   "private": false,
   "scripts": {
     "start": "node app.js"
@@ -17,8 +17,8 @@
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "serve-favicon": "~2.4.2"
+    "passport-local": "^1.0.0"
+    // "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

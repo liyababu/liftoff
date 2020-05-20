@@ -39,15 +39,15 @@ app.use(function(req, res, next) {
 
 app.use('/', index);
 var http = require('http');
+app.use( function(req, res, next) {
 
-function ignoreFavicon(req, res, next) {
-  if (req.originalUrl === '/favicon.ico') {
-    res.status(204).json({nope: true});
-  } else {
-    next();
+  if (req.originalUrl && req.originalUrl.split("/").pop() === 'favicon.ico') {
+    return res.sendStatus(204);
   }
-}
-app.use(ignoreFavicon);
+
+  return next();
+
+});
 /**
  * Get port from environment and store in Express.
  */

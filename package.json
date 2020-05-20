@@ -1,5 +1,5 @@
 {
-  "name": "World of flavor",
+  "name": "nodejs-site",
   "version": "1.0.0",
   "author": "Liya Babu",
   "email": "liya.babu1@gmail.com",
@@ -17,7 +17,8 @@
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

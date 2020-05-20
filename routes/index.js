@@ -15,16 +15,23 @@ var connection = mysql.createPool({
 	database : 'heroku_853a6dc38004aa3'
 });
 
-connection.connect(function(err) {
-    // in case of error
-    if(err){
-        console.log(err.code);
-        console.log(err.fatal);
-	}
-	else{
-		console.log("Connection to database success");	
-	}
+// connection.connect(function(err) {
+//     // in case of error
+//     if(err){
+//         console.log(err.code);
+//         console.log(err.fatal);
+// 	}
+// 	else{
+// 		console.log("Connection to database success");	
+// 	}
 
+connection.getConnection(function(err, connection) {
+  if (err) throw err; // not connected!
+
+  // Use the connection
+  else{
+    		console.log("Connection to database success");	
+    	}
 });
 
 router.get('/', function (req, res, next) {

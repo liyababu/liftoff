@@ -15,16 +15,6 @@ var connection = mysql.createPool({
 	database : 'heroku_853a6dc38004aa3'
 });
 
-// connection.connect(function(err) {
-//     // in case of error
-//     if(err){
-//         console.log(err.code);
-//         console.log(err.fatal);
-// 	}
-// 	else{
-// 		console.log("Connection to database success");	
-// 	}
-
 connection.getConnection(function(err, connection) {
   if (err) throw err; // not connected!
 
@@ -58,12 +48,11 @@ router.get('/signin',
     var email = req.body.email;
     var password = req.body.password;
   if(username && email && password != 0){
-	  console.log("10")
   var sql = "INSERT INTO `accounts`(`username`,`password`, `email`) VALUES ('"+username+"','"+password+"','"+email+"')";
   connection.query(sql, function(err, result)  {
 	if (username && email && password != 0) {
 		console.log("Start redirection");
-		res.redirect("/");
+		res.redirect("/login");
 		res.end();
 	} else {
 res.send('Please enter Username and Password!');
@@ -102,6 +91,7 @@ router.get('/logout',
     req.session.loggedin = false;
     req.session.username = null;
     req.session.password = null;
+    req.session.cart= null;
     res.redirect('/');
   });
 

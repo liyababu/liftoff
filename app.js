@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('req-flash');
+var flash = require('connect-flash');
 var hbs = require('hbs');
 var session = require('express-session');
 var http = require('http');
@@ -39,6 +40,8 @@ app.use(function(req, res, next) {
 app.use(flash());
 
 app.use('/', index);
+
+
 
 
 

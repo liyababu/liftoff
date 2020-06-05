@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "^4.16.4",
@@ -19,7 +20,8 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "req-flash": "0.0.3",
-    "serve-favicon": "^2.4.5"
+    "serve-favicon": "^2.4.5",
+    "stripe": "^8.56.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
